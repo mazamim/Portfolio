@@ -1,7 +1,12 @@
 /* base style */
+
+html {
+  scroll-behavior: smooth;
+}
 body{
   font-family: "Quicksand",sans-serif;
   margin: 0;
+
 }
 
 #service h2, #portfolio h2 ,#contact h2,#article-1 h2{
@@ -20,11 +25,15 @@ header{
 
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 60px;
-  position: absolute;
+
+  position: fixed;
  width: 100%;
  box-sizing: border-box;
+ z-index: 10;
+ background: rgb(2,0,36);
+ background: linear-gradient(185deg, rgba(2,0,36,1) 0%, rgba(8,7,7,0) 100%, rgba(0,212,255,1) 100%);
+
+ 
 }
 
 #page-logo a{
@@ -79,6 +88,7 @@ background-color: rgb(255,225,0);
   background-image: url(../assets/images/back.jpg);
   background-position: center;
   background-size: cover;
+  z-index: 11;
 }
 #hero-content{
   width: 900px;
@@ -306,11 +316,22 @@ margin: 0 50px;
 }
 
 
+
+
+
+
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  header{
+    flex-direction: column;
+    width: 100%;
+  }
   header nav ul{
-    display: none;
+    flex-direction: column;
   }
 
   #hero-content{
@@ -375,8 +396,14 @@ margin: 0 50px;
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+  header{
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+ padding: 15px 15px;
+  }
   header nav ul{
-    display: none;
+    flex-direction: row;
   }
 
   #hero-content{
@@ -424,13 +451,23 @@ width: 100%;
     margin: 0 20px;
     }
 
+   
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 953px) {
-  header nav ul{
-    display: flex;
+  header{
+    flex-direction: row;
+    align-items: center;
+    padding: 15px 60px;
   }
+  header nav ul{
+    flex-direction: row;
+
+  
+  }
+
 
   #hero-content{
     width: 900px;
