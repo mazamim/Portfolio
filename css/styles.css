@@ -313,30 +313,30 @@ margin: 0 50px;
 
   #hero-content{
     width: 100%;
-    margin: 0 auto;
+ 
       }
 
       #article{
-        margin: 0 auto;
+       
         width: 300px;
       }
 
       #article-1{
-        margin: 0 auto;
+     
         width: 100%;
       }
 
       #article-2{
-        margin: 0 auto;
+      
         width: 100%;
       }
       #service div{
-        margin: 0 auto;
+       
         width:100%
       }
 
       #portfolio{
-        margin: 0 auto;
+       
         width: 100%
       }
 
@@ -353,7 +353,7 @@ margin: 0 50px;
 
       
   #contact{
-    margin: 0 auto;
+   
     width: 100%;
   }
     }
