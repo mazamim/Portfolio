@@ -293,11 +293,13 @@ padding: 40px;
 footer ul{
   display: flex;
   justify-content: center;
+  
 
 }
 
 
 footer li a{
+ 
 font-size: 80px;
 color: white;
 margin: 0 50px;
@@ -360,6 +362,12 @@ margin: 0 50px;
   footer{
     width: 100%
   }
+  footer li a{
+    font-size: 30px;
+    color: white;
+    margin: 0 20px;
+    }
+
     }
  
 
@@ -409,6 +417,13 @@ width: 100%;
   footer{
     width: 100%
   }
+
+  footer li a{
+    font-size: 30px;
+    color: white;
+    margin: 0 20px;
+    }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -451,6 +466,14 @@ width: 100%;
       #contact{
         width: 900px;
       }
+      footer{
+        width: 100%
+      }
+      footer li a{
+        font-size: 80px;
+        color: white;
+        margin: 0 50px;
+        }
 
 } 
 
