@@ -221,7 +221,7 @@ margin: 20px;
 #recent-list{
   display: flex;
 
-  width: 100%;
+  width: 90%;
   margin: auto;
 
 
@@ -286,34 +286,164 @@ input[type=submit]:hover {
 
 
 footer{
-  background-color: rgb(169, 169, 169);
+background:linear-gradient(70deg,rgb(24,24,24),rgb(25,29,29));
+padding: 40px;
+}
+
+footer ul{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+footer li a{
+font-size: 80px;
+color: white;
+margin: 0 50px;
 }
 
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
+  header nav ul{
+    display: none;
+  }
 
+  #hero-content{
+    width: 100%;
+    margin: 0 auto;
+      }
+
+      #article{
+        margin: 0 auto;
+        width: 300px;
+      }
+
+      #article-1{
+        margin: 0 auto;
+        width: 100%;
+      }
+
+      #article-2{
+        margin: 0 auto;
+        width: 100%;
+      }
+      #service div{
+        margin: 0 auto;
+        width:100%
+      }
+
+      #portfolio{
+        margin: 0 auto;
+        width: 100%
+      }
+
+      #recent-list{
+        justify-content: center;
+        display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+        width: 90%;
+        margin: auto;
+      
+      
+      }
+
+      
+  #contact{
+    margin: 0 auto;
+    width: 100%;
+  }
+    }
  
-}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
+  header nav ul{
+    display: none;
+  }
+
+  #hero-content{
+width: 100%;
+  }
+
+  #article{
+    width: 300px;
+  }
+  #article-1{
+    width: 100%;
+  }
+  #article-2{
+    width: 100%;
+  }
+
+  #service div{
+    width:100%
+  }
+
+  #portfolio{
+    width: 100%
+  }
+
+  #recent-list{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
   
+  
+  }
+
+  #contact{
+    width: 100%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 953px) {
+  header nav ul{
+    display: flex;
+  }
+
+  #hero-content{
+    width: 900px;
+      }
+    
+      #article{
+        width: 900px;
+      }
+      #article-1{
+        width: 900px;
+      }
+      #article-2{
+        width: 900px;
+      }
+    
+      #service div{
+        width:900px
+      }
+    
+      #portfolio{
+        width: 900px
+      }
+
+      #recent-list{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        margin: auto;
+      
+      
+      }
+
+      #contact{
+        width: 900px;
+      }
 
 } 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-
-} 
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-
-}
